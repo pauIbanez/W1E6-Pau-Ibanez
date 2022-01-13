@@ -5,6 +5,7 @@
   font-family: "Karla", "sans-serif";
   font-weight: 600;
   font-size: small;
+  user-select: none;
 }
 
 body {
@@ -40,6 +41,7 @@ a {
   align-items: center;
   padding-left: 10px;
   padding-right: 10px;
+  transition: all 0.5s;
 }
 
 .nav-button--pack {
@@ -51,6 +53,7 @@ a {
 .logo {
   max-height: 50px;
   width: auto;
+  margin-left: 10px;
   margin-right: 10px;
 }
 
@@ -58,5 +61,34 @@ a {
   height: 30px;
   border-radius: 15px;
   background-color: turquoise;
+  border: 2px solid turquoise;
   color: white;
+}
+
+.nav-button--start:hover {
+  height: 30px;
+  border-radius: 15px;
+  background-color: white;
+
+  color: turquoise;
+}
+
+.nav-button:hover:not(.nav-button--start, .nav-button--pack) {
+  color: turquoise;
+  border-bottom: 2px solid turquoise;
+}
+
+.nav-button--normal {
+  display: none;
+}
+
+@media (min-width: 500px) {
+  .nav-button--normal {
+    display: flex;
+  }
+
+  /* .nav-button:hover:not(.nav-button--start, .nav-button--pack) {
+    color: turquoise;
+    border-bottom: 2px solid turquoise;
+  } */
 }
