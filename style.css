@@ -57,6 +57,17 @@ a {
   margin-right: 10px;
 }
 
+.nav-button i {
+  margin-left: 5px;
+  font-size: 20px;
+  transform: rotateZ(90deg);
+  transition: all 0.5s;
+}
+.nav-button:hover i {
+  transform: rotateZ(0);
+  color: turquoise;
+}
+
 .nav-button--start {
   height: 30px;
   border-radius: 15px;
