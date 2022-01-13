@@ -3,6 +3,8 @@
 * {
   box-sizing: border-box;
   font-family: "Karla", "sans-serif";
+  font-weight: 600;
+  font-size: small;
 }
 
 body {
@@ -49,4 +51,12 @@ a {
 .logo {
   max-height: 50px;
   width: auto;
+  margin-right: 10px;
+}
+
+.nav-button--start {
+  height: 30px;
+  border-radius: 15px;
+  background-color: turquoise;
+  color: white;
 }
