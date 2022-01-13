@@ -2,8 +2,51 @@
 
 * {
   box-sizing: border-box;
+  font-family: "Karla", "sans-serif";
 }
 
 body {
   margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: gray;
+}
+
+.header {
+  position: fixed;
+  height: 80px;
+  box-shadow: 0px 0 5px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  background-color: white;
+}
+
+.main-nav {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.nav-button {
+  justify-self: flex-end;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.nav-button--pack {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.logo {
+  max-height: 50px;
+  width: auto;
 }
